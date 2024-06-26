@@ -1,0 +1,41 @@
+<head>
+    <body>
+        <table border="1">
+            <tr>
+                <th scope="col">PRODUCT</th>
+                <th scope="col">IMAGE</th>
+                <TH scope="col">DESCRIPTION</TH>
+                <TH scope="col">PRICE</TH>
+                <TH scope="col">BUY</TH>
+            </tr>
+            <tr>
+                <th scope="row">IPHONE 15 PRO MAX</th>
+               <td><img src="15 pro max.jpeg" width="80"></td> 
+               <td>The iPhone 15 Pro Max features a 6.7-inch Super Retina XDR display, an advanced A17 Bionic chip, and a triple-camera system with enhanced low-light performance and ProRAW capabilities. It boasts a sleek design with improved battery life and 5G connectivity for a premium user experience.</td>
+               <td>1,50,000INR</td>
+               <td><a href="https://amzn.in/d/04d3ZFQ3">Click to buy</a></td>
+            </tr>
+            <tr>
+                <th scope="row">IPHONE 15 PRO</th>
+               <td><img src="15 pro max.jpeg" width="80"></td> 
+               <td>The iPhone 15 Pro features cutting-edge performance with its A17 Bionic chip, a sleek titanium design, and advanced camera capabilities for stunning photos and videos. Experience unparalleled speed, power, and elegance in one device.</td>
+               <td>1,35,000INR</td>
+               <td><a href="https://amzn.in/d/0cwiaRzd">Click to buy</a></td>
+            </tr>
+            <tr>
+                <th scope="row">IPHONE 15 PLUS</th>
+                <td><img src="15 plus.jpeg" width="80"></td> 
+                <td>The iPhone 15 Plus boasts a larger display, powerful A16 Bionic chip, and enhanced battery life for an immersive and enduring user experience. Enjoy top-notch performance, stunning visuals, and all-day battery in a sleek design.</td>
+                <td>81,000INR</td>
+                <td><a href="https://amzn.in/d/0g6AD2Y6">Click to buy</a></td>
+            </tr>
+            <tr>
+                <th scope="row">IPHONE 15</th>
+                <td><img src="15 plus.jpeg" width="80"></td> 
+                <td>The iPhone 15 combines powerful performance with its A16 Bionic chip, a sleek design, and enhanced camera capabilities for excellent photos and videos. Experience seamless functionality and style in one device.</td>
+                <td>71,000INR</td>
+                <td><a href="https://amzn.in/d/0bZodwTY">Click to buy</a></td>
+            </tr>
+        </table>
+    </body>
+</head>
