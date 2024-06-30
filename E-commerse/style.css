@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color:black;
+    color: azure;
+    padding: 15px;
+}
+li,h1,ul{
+ display: inline;
+
+}
+ul{
+margin-left: 80%;
+}
+
+li:hover{
+    color: red;
+    cursor: pointer;
+}
+
+input{
+width: 60%;
+padding: 15px;
+}
+
+.searchbar{
+padding: 50px;
+text-align: center;
+}
+li>a{
+color: red;
+}
+
+.T{
+color: red;
+}
+.h3:hover{
+background-color: black;
+display: inline-block;
+}
+
+
+hr{
+margin-top: 20px;
+}
+
+.kp,.pk{
+margin: right:200px;
+padding: 30px;
+}
+
+.table{
+    border: 2px solid ;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+        margin-top: 15px;
+}
+.table1{
+    border: 2px solid ;
+    display: inline-block;
+    width: 300px;
+    height: -10px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.table:hover{
+    background-color: black;
+    color: red;
+}
+
+.table1:hover{
+    background-color: black;
+    color: red;
+}
+
+.h3:hover{
+    cursor: pointer;
+}
+
+.shirt4{
+    border: 2px solid ;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.shirt5{
+    border: 2px solid ;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.shirt4:hover{
+    background-color: black;
+    color: red;
+  }
+
+  .shirt5:hover{
+    background-color: black;
+    color: red;
+  }
