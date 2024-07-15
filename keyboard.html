@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual keyboard</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <style>
+        body {
+            background-color: rgb(127, 231, 79);
+        }
+
+        .container {
+            margin: 160px 0 0 200px;
+        }
+
+        input {
+            width: 950px;
+            height: 50px;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 5px 5px 10px #ff0505, -5px -5px 10px #fff;
+            font-size: 20px;
+        }
+
+        .row {
+            width: 100%;
+            height: 60px;
+        }
+
+        .one,
+        .two,
+        .three,
+        .four,
+        .five {
+            margin: 10px 0 0 0;
+        }
+
+        button {
+            background-color:blue;
+            color: #fff;
+            width: 55px;
+            height: 55px;
+            border: none;
+            box-shadow: 5px 5px 10px #ff0000, -5px -5px 10px #fff;
+            font-size: 20px;
+            margin-left: 5px;
+            outline: none;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 20%
+        }
+
+        button:active {
+            box-shadow: 1px 1px 2px #ff0000, -1px -1px 2px #ff0000;
+        }
+
+        .backspace {
+            width: 115px;
+            border-radius: 10px
+        }
+
+        .tab {
+            width: 85px;
+            border-radius: 10px;
+        }
+
+        .slace {
+            width: 85px;
+            border-radius: 10px;
+        }
+
+        .caps {
+            width: 100px;
+            border-radius: 10px;
+        }
+
+        .enter {
+            width: 135px;
+            border-radius: 10px;
+        }
+
+        .shift {
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        .bottom {
+            width: 82px;
+            border-radius: 10px;
+        }
+
+        .space {
+            width: 400px;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+            
+                <input type="text" id="name" name="Display" placeholder="Text">
+                <div class="col-lg-3 col-md-5 col-sm-12 border 2px solid black ">
+            <div class="row one">
+                <button id="k" onclick="appendToDisplay('`')">`</button>
+                <button id="k" onclick="appendToDisplay('1')">1</button>
+                <button id="k" onclick="appendToDisplay('2')">2</button>
+                <button id="k" onclick="appendToDisplay('3')">3</button>
+                <button id="k" onclick="appendToDisplay('4')">4</button>
+                <button id="k" onclick="appendToDisplay('5')">5</button>
+                <button id="k" onclick="appendToDisplay('6')">6</button>
+                <button id="k" onclick="appendToDisplay('7')">7</button>
+                <button id="k" onclick="appendToDisplay('8')">8</button>
+                <button id="k" onclick="appendToDisplay('9')">9</button>
+                <button id="k" onclick="appendToDisplay('0')">0</button>
+                <button id="k" onclick="appendToDisplay('-')">-</button>
+                <button id="k" onclick="appendToDisplay('=')">=</button>
+                <button class="backspace" onclick="back()">Backspace</button>
+            </div>
+
+            <div class="row two">
+                <button class="tab"  onclick="appendToDisplay('Tab')">Tab</button>
+                <button onclick="appendToDisplay('Q')">Q</button>
+                <button onclick="appendToDisplay('W')">W</button>
+                <button onclick="appendToDisplay('E')">E</button>
+                <button onclick="appendToDisplay('R')">R</button>
+                <button onclick="appendToDisplay('T')">T</button>
+                <button onclick="appendToDisplay('Y')">Y</button>
+                <button onclick="appendToDisplay('U')">U</button>
+                <button onclick="appendToDisplay('I')">I</button>
+                <button onclick="appendToDisplay('O')">O</button>
+                <button onclick="appendToDisplay('P')">P</button>
+                <button onclick="appendToDisplay('[')">[</button>
+                <button onclick="appendToDisplay(']')">]</button>
+                <button class="slace" onclick="appendToDisplay('\')">\</button>
+            </div>
+
+            <div class="row three">
+                <button class="caps" onclick="appendToDisplay('Caps')">Caps</button>
+                <button onclick="appendToDisplay('A')">A</button>
+                <button onclick="appendToDisplay('S')">S</button>
+                <button onclick="appendToDisplay('D')">D</button>
+                <button onclick="appendToDisplay('F')">F</button>
+                <button onclick="appendToDisplay('G')">G</button>
+                <button onclick="appendToDisplay('H')">H</button>
+                <button onclick="appendToDisplay('J')">J</button>
+                <button onclick="appendToDisplay('K')">K</button>
+                <button onclick="appendToDisplay('L')">L</button>
+                <button onclick="appendToDisplay(';')">;</button>
+                <button onclick="appendToDisplay(''')">'</button>
+                <button class="enter" onclick="appendToDisplay('Enter')">Enter</button>
+            </div>
+
+            <div class="row four">
+                <button class="shift" id="k" onclick="appendToDisplay('Shift')">Shift</button>
+                <button id="k" onclick="appendToDisplay('Z')">Z</button>
+                <button id="k" onclick="appendToDisplay('X')">X</button>
+                <button id="k" onclick="appendToDisplay('C')">C</button>
+                <button id="k" onclick="appendToDisplay('V')">V</button>
+                <button id="k" onclick="appendToDisplay('B')">B</button>
+                <button id="k" onclick="appendToDisplay('N')">N</button>
+                <button id="k" onclick="appendToDisplay('M')">M</button>
+                <button id="k" onclick="appendToDisplay('<')"><</button>
+                <button id="k" onclick="appendToDisplay('>')">></button>
+                <button id="k" onclick="appendToDisplay('?')">?</button>
+                <button class="shift" id="k" onclick="appendToDisplay('Shift')">Shift</button>
+            </div>
+
+            <div class="row five">
+                <button class="bottom" onclick="appendToDisplay('Ctrl')">Ctrl</button>
+                <button class="bottom" onclick="appendToDisplay('bx bxl-windows')"><i class='bx bxl-windows'></i></button>
+                <button class="bottom" onclick="appendToDisplay('Alt')">Alt</button>
+                <button class="space" onclick="appendToDisplay('Space')">Space</button>
+                <button class="bottom" onclick="appendToDisplay('Alt')">Alt</button>
+                <button class="bottom" onclick="appendToDisplay('bx bxl-windows')"><i class='bx bxl-windows'></i></button>
+                <button>ctrl</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script>
+        var disp = document.getElementById("name")
+
+        function appendToDisplay(value1){
+            disp.value += value1;
+        }
+        function  back(){
+            var p = disp.value;
+            disp.value=p.slice(0,-1)
+        }
+    </script>
+
+</body>
+
+</html>
